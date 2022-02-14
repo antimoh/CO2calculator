@@ -1,0 +1,188 @@
+/*
+4px - 0.25rem
+8px - 0.5rem
+10px - 0.625rem
+11px - 0.6875rem
+12px - 0.75rem
+13px - 0.8125rem
+14px - 0.875rem
+15px - 0.9375rem
+16px - 1rem
+18px - 1.125rem
+20px - 1.25rem
+21px - 1.3125rem
+22px - 1.375rem
+24px - 1.5rem
+25px - 1.5625rem
+26px - 1.625rem
+28px - 1.75rem
+30px - 1.875rem
+32px - 2rem
+34px - 2.125rem
+35px - 2.1875rem
+36px - 2.25rem
+40px - 2.5rem
+42px - 2.625rem
+44px - 2.75rem
+45px - 2.8125rem
+48px - 3rem
+54px - 3.375rem
+64px - 4rem
+72px - 4.5rem
+96px - 6rem
+*/
+
+
+/* Please use rem */
+
+html,
+body {
+    font-family: $mainFamily;
+}
+
+// ##################################################################
+//                      General font-size
+// ##################################################################
+h1 {
+    @include font(1.5rem !important, $purple, $fbold !important);
+
+    @media screen and (min-width: 768px) {
+        @include font(2rem !important, $purple, $fbold !important);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font(2.25rem !important, $purple, $fbold !important);
+    }
+
+    span {
+        font-weight: 400!important;
+    }
+}
+
+h2 {
+    @include font(1.625rem !important, $purple, $fsemibold, 1.2);
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 0;
+        @include font(2.5rem !important, $purple, $fsemibold, 1.2);
+    }
+
+    @media only screen and (min-width: 1920px) {
+        @include font(3rem !important, $purple, $fsemibold, 1.2);
+    }
+}
+
+h3 {
+    @include font(1.875rem !important, $grey-dark, $fsemibold, 1.4);
+
+    @media screen and (min-width: 1200px) {
+        @include font(2rem !important, $grey-dark, $fsemibold, 1.4);
+    }
+}
+
+h4 {
+    @include font(1.5rem !important);
+
+    @media screen and (min-width: 768px) {
+        @include font(1.875rem !important);
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font(1.625rem !important);
+    }
+
+    @media screen and (min-width: 1920px) {
+        @include font(1.875rem !important);
+    }
+}
+
+h5 {
+    @include font(1.5rem !important, $grey-dark, false, 1.2);
+
+    @media screen and (min-width: 768px) {
+        @include font(1.5rem !important, $grey-dark, false, 1.2);
+    }
+}
+
+h6 {
+    @include font(1.5rem !important);
+
+    @media screen and (min-width: 1200px) {
+        @include font(1.125rem !important);
+    }
+}
+
+p,
+ul li {
+    // font-size: 1.125rem !important;
+    // line-height: 1.5rem !important;
+    @include font(1.125rem !important, false, false, 1.5rem !important);
+
+    // @media only screen and (min-width: 1200px) {
+    //     // font-size: 0.875rem !important;
+    //     // line-height: 1.125rem !important;
+    //     @include font(0.875rem !important, false, false, 1.125rem !important);
+    // }
+
+    // @media only screen and (min-width: 1920px) {
+    //     // font-size: 1.125rem !important;
+    //     // line-height: 1.5rem !important;
+    //     @include font(1.125rem !important, false, false, 1.5rem !important);
+    // }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -o-transition: .3s all;
+    -ms-transition: .3s all;
+
+    span {
+        font-weight: $flight;
+    }
+}
+
+b {
+    font-weight: $fsemibold !important;
+}
+
+// #################################
+//      BUTTONS
+// #################################
+.button {
+    a {
+        font-size: 1rem;
+        line-height: 19px;
+        font-weight: $fsemibold;
+
+        @media (min-width: 1200px) {
+            line-height: 15px;
+        }
+
+        @media (min-width: 1920px) {
+            line-height: 19px;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+}
+
+div,
+a,
+button {
+    transition: .6s all;
+    -webkit-transition: .6s all;
+    -moz-transition: .6s all;
+    -o-transition: .6s all;
+    -ms-transition: .6s all;
+}

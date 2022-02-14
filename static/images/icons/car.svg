@@ -1,0 +1,14 @@
+<svg id="car" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="24" viewBox="0 0 48 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_58" data-name="Rectangle 58" width="48" height="24" fill="none" stroke="#5f249f" stroke-width="2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_22" data-name="Group 22" clip-path="url(#clip-path)">
+    <path id="Path_508" data-name="Path 508" d="M15.094,19c5.024-.008,11.965.027,17,.019" fill="none" stroke="#5f249f" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_509" data-name="Path 509" d="M41,19h6V13c0-2.337-6.833-5.25-11.953-6-3.884-3.685-7.326-6-11.111-6H16.094C11.928,1,9.535,4,5.282,7H2.094a19.019,19.019,0,0,0-.875,8.936A3.668,3.668,0,0,0,5.094,19H6" fill="none" stroke="#5f249f" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_510" data-name="Path 510" d="M32.095,8.2l-2,.8h-16l-3-3" fill="none" stroke="#5f249f" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_26" data-name="Ellipse 26" cx="4.5" cy="4.5" r="4.5" transform="translate(32.095 14)" fill="none" stroke="#5f249f" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Ellipse_27" data-name="Ellipse 27" cx="4.5" cy="4.5" r="4.5" transform="translate(6.094 14)" fill="none" stroke="#5f249f" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

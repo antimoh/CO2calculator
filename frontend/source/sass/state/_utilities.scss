@@ -1,0 +1,288 @@
+/*------------------------
+        Lists 
+------------------------*/
+
+.ul-decimal {
+    list-style-type: decimal;
+}
+
+.ul-disc {
+    list-style-type: disc;
+}
+
+.ul-square {
+    list-style-type: square;
+}
+
+.ul-circle {
+    list-style-type: circle;
+}
+
+
+/*------------------------
+Margins,Paddings,Containers 
+------------------------*/
+
+.text-center {
+   text-align: center !important;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+
+/*------------------------
+Margins,Paddings 
+------------------------*/
+
+.margin-top-bottom-10 {
+    margin: 10px 0;
+}
+
+//padding creator
+$paddingDirection:('right', 'left', 'top', 'bottom');
+$paddingLength:(10, 15, 20, 30, 40, 45, 50, 60, 100);
+
+@each $dir in $paddingDirection {
+    @each $len in $paddingLength {
+        %padding-#{$dir}-#{$len} {
+            padding-#{$dir}: #{$len}px !important;
+        }
+    }
+}
+
+//example padding left 30
+.pl-100 {
+    @extend %padding-left-100;
+}
+
+//olny for mobile
+.mob-pl-100 {
+    @extend %padding-left-100;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 0;
+    }
+}
+
+.pt-pb-10 {
+    @extend %padding-top-10;
+    @extend %padding-bottom-10;
+}
+
+.pt-pb-20 {
+    @extend %padding-top-20;
+    @extend %padding-bottom-20;
+}
+
+.ml-20 {
+    margin-left: 20px!important;
+}
+
+.ml-10 {
+    margin-left: 10px!important;
+}
+
+/*------------------------*/
+
+//margin creator
+$marginDirection:('right', 'left', 'top', 'bottom');
+$marginLength:(0, 10, 15, 20, 25, 30, 40, 45, 50, 60, 100);
+
+@each $dir in $marginDirection {
+    @each $len in $marginLength {
+        %margin-#{$dir}-#{$len} {
+            margin-#{$dir}: #{$len}px !important;
+        }
+    }
+}
+
+//example margin left 100
+.ml-100 {
+    @extend %margin-left-100;
+}
+
+//only for mobile
+.mob-pr-100 {
+    @extend %margin-left-100;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
+}
+
+.mobile-mt-0 {
+    @extend %margin-top-0;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    }
+}
+
+.mt-mb-10 {
+    @extend %margin-top-10;
+    @extend %margin-bottom-10;
+}
+
+.ml-0 {
+    @extend %margin-left-0;
+}
+
+.mr-0 {
+    @extend %margin-right-0;
+}
+
+.mt-10 {
+    @extend %margin-top-10;
+}
+
+.mt-20 {
+    @extend %margin-top-20;
+}
+
+.mt-25 {
+    @extend %margin-top-25;
+}
+
+.mt-30 {
+    @extend %margin-top-30;
+}
+
+.mt-40 {
+    @extend %margin-top-40;
+}
+
+.mt-50 {
+    @extend %margin-top-50;
+}
+
+
+.mt-60 {
+    @extend %margin-top-60;
+}
+
+.mt-100 {
+    @extend %margin-top-100;
+}
+
+.mb-10 {
+    @extend %margin-bottom-10;
+}
+
+.mb-20 {
+    @extend %margin-bottom-20;
+}
+
+.mb-30 {
+    @extend %margin-bottom-30;
+}
+
+.mb-50 {
+    @extend %margin-bottom-50;
+}
+
+.mb-60 {
+    @extend %margin-bottom-60;
+}
+
+/*------------------------
+        Images 
+------------------------*/
+
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    bottom: 0;
+    display: block;
+}
+
+
+
+/*------------------------
+        Positions 
+------------------------*/
+
+.pos-static {
+    position: static;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.pos-fixed {
+    position: fixed;
+}
+
+.pos-sticky {
+    position: sticky;
+}
+
+
+/*------------------------
+        Others 
+------------------------*/
+
+
+.block {
+    display: block;
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-purple {
+    color: $purple !important;
+}
+
+.text-white {
+    color: $white !important;
+}
+
+.font-w-400 {
+    font-weight: $fnormal !important;
+}
+
+.font-w-600 {
+    font-weight: $fsemibold !important;
+}
+
+.font-w-700 {
+    font-weight: $fbold !important;
+}
+
+.display-block {
+    display: inline-block !important;
+}
+
+.w-60 {
+    width: 60px !important;
+}
+
+.w-100px {
+    width: 100px !important;
+}
+
+.text-underline {
+    text-decoration: underline; 
+}

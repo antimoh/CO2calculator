@@ -1,0 +1,6 @@
+
+/**
+    Global
+*/
+
+require('./components/app')

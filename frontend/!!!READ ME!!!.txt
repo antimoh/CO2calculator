@@ -1,0 +1,66 @@
+## -------------------------##
+        Installation
+## -------------------------##
+1. Install **Node.js**. 
+2. Open console _(terminal)_ and go to the project folder.
+3. Install dependencies from the file **package.json**.
+ command:
+  npm i
+4. Ready :)
+
+## -------------------------##
+      Running the example 
+## -------------------------##
+
+1. Open terminal in frontend folder.
+
+2. First run: run the command - npm run build.
+
+3. All source files, assets are distributed- to static folder, outside frontend folder.
+
+4. After first run you can run command: npm run watch and work on source files.
+
+   All changes in your source files in frontend folder will be immediately distributed.
+
+5. When you're done - you can build again - npm run build.
+
+## -------------------------##
+          Settings 
+## -------------------------##
+
+1. Entry point -  frontend\source\entry\app.js
+
+    - change entry point for prod - frontend\config\webpack.prod.js
+    - change entry point for dev - frontend\config\webpack.dev.js
+
+2. Build prod version - npm run build.
+
+3. Build dev version - npm run watch.
+
+4. Changing the output path.
+
+    - prod  frontend\config\webpack.prod.js
+    - dev  frontend\config\webpack.dev.js
+
+5. Css - autoprefixer.
+
+    frontend\.browserslistrc
+
+    https://github.com/browserslist/browserslist
+
+6. Js polyfills.
+
+    - uncomment in this file frontend\source\entry\app.js
+        
+      //require('babel-polyfill');
+
+    - Browsers list:
+        frontend\.babelrc
+        "targets": {
+            "browsers": ["ie >= 11"]
+        } 
+
+
+
+
+All questions to lWesolowski@luxoft.com 

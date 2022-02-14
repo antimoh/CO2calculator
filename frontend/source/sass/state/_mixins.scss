@@ -1,0 +1,345 @@
+%clearfix {
+    *zoom: 1;
+    clear: both;
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/*how use*/
+/*.container-box {
+  @extend %clearfix;
+}*/
+
+@mixin transition($time: 0.25s) {
+    -webkit-transition: $time ease-in-out;
+    -moz-transition: $time;
+    -ms-transition: $time;
+    -o-transition: $time;
+    transition: $time;
+}
+
+@mixin input-placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+/*z-index*/
+
+$z-index: (
+    arrow: 1,
+    nav: 3,
+    nav-main: 100,
+    nav-dropdown: 101,
+    nav-switcher: 102,
+    video: 2,
+    overlay: 200,
+    popup: 300
+);
+
+@function z-index($key) {
+    @return map-get($z-index, $key);
+}
+
+@mixin z($key) {
+    z-index: z-index($key);
+}
+
+/*how use*/
+
+/*
+.navigation {
+  @include z(nav);
+}
+*/
+
+/*pseudoelements*/
+
+@mixin ps($display: block, $pos: absolute, $content: "") {
+    display: $display;
+    position: $pos;
+    content: $content;
+}
+
+/*how use*/
+
+/*
+section:after {
+    @include ps;
+}
+*/
+
+/*fonts*/
+
+@mixin font(
+    $size: false,
+    $colour: false,
+    $weight: false,
+    $line: false,
+    $letter-spacing: false
+) {
+    @if $size {
+        font-size: $size;
+    }
+    @if $colour {
+        color: $colour;
+    }
+    @if $weight {
+        font-weight: $weight;
+    }
+    @if $line {
+        line-height: $line;
+    }
+    @if $letter-spacing {
+        letter-spacing: $letter-spacing;
+    }
+}
+
+/*how use*/
+/*
+p { 
+  @include font(1rem, white, 700 , 1.22)
+}
+*/
+
+/*gradient*/
+
+@mixin gradient($start-color, $end-color, $orientation) {
+    background: $start-color;
+    @if $orientation == "ver" {
+        background: -webkit-linear-gradient(top, $start-color, $end-color);
+        background: linear-gradient(to bottom, $start-color, $end-color);
+    } @else if $orientation == "hor" {
+        background: -webkit-linear-gradient(left, $start-color, $end-color);
+        background: linear-gradient(to right, $start-color, $end-color);
+    } @else {
+        background: -webkit-radial-gradient(
+            center,
+            ellipse cover,
+            $start-color,
+            $end-color
+        );
+        background: radial-gradient(
+            ellipse at center,
+            $start-color,
+            $end-color
+        );
+    }
+}
+
+/*how use*/
+/*
+div {
+  @include gradient(#000, #303030, hor);
+}
+*/
+
+/*Centering vertically and horizontally*/
+
+@mixin vert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-size: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*how use*/
+/*
+div{
+  @include vert;
+}
+*/
+
+/*Arrow in css*/
+
+@mixin arrow($direction, $size, $color) {
+    width: 0;
+    height: 0;
+    @if ($direction == left) {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+    } @else if ($direction == right) {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+    } @else if ($direction == down) {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+    } @else {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+    }
+}
+
+/*how use*/
+/*
+div {
+   @include arrow(left, 30px, #000);
+}
+*/
+
+@mixin image-2x($image, $width, $height) {
+    @media (min--moz-device-pixel-ratio: 1.3),
+        (-o-min-device-pixel-ratio: 2.6/2),
+        (-webkit-min-device-pixel-ratio: 1.3),
+        (min-device-pixel-ratio: 1.3),
+        (min-resolution: 1.3dppx) {
+        background-image: url($image);
+        background-size: $width $height;
+    }
+}
+
+/*how use*/
+/*div.logo {
+  background: url("logo.png") no-repeat;
+  @include image-2x("logo2x.png", 100px, 25px);
+}*/
+
+/*opacity*/
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    $opacity-ie: $opacity * 100;
+    filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/*how use*/
+/*div.logo {
+  @include opacity(0.8);
+}*/
+
+/*truncate*/
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin share-btn($width, $height, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: $height;
+    background-color: $background;
+}
+
+@mixin icon($width, $height, $image) {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: $width;
+    height: $height;
+    background-image: $image;
+}
+
+@mixin overline($color) {
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $color;
+        margin-bottom: 2px;
+    }
+}
+
+@mixin underline($color) {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $color;
+        margin-top: 2px;
+    }
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin rotate($rotation) {
+    -webkit-transform: rotate($rotation);
+    -moz-transform: rotate($rotation);
+    -ms-transform: rotate($rotation);
+    -o-transform: rotate($rotation);
+    transform: rotate($rotation);
+}
+
+@mixin box-sizing($box-sizing) {
+    -webkit-box-sizing: $box-sizing;
+    -moz-box-sizing: $box-sizing;
+    box-sizing: $box-sizing;
+}
+@mixin transition-property($transition) {
+    -webkit-transition-property: $transition;
+    -moz-transition-property: $transition;
+    -o-transition-property: $transition;
+    transition-property: $transition;
+}
+
+@mixin transition-duration($duration) {
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    -o-transition-duration: $duration;
+    transition-duration: $duration;
+}
+
+@mixin transition-timing-function($timing) {
+    -webkit-transition-timing-function: $timing;
+    -moz-transition-timing-function: $timing;
+    -o-transition-timing-function: $timing;
+    transition-timing-function: $timing;
+}
+
+@mixin activeButtonState() {
+    background-color: $black;
+    color: $white;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-color: $black transparent transparent;
+        border-width: 10px;
+        border-style: solid;
+    }
+}

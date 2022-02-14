@@ -1,0 +1,15 @@
+.luxoft-offering {
+    ul {
+        width: 80%;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            width: 50%;
+        }
+
+        li {
+            padding: 5px 0;
+            margin-left: 17px;
+        }
+    }
+}

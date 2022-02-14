@@ -1,0 +1,440 @@
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+
+.fade.in {
+    opacity: 1
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%
+}
+
+.embed-responsive-4by3 {
+    padding-bottom: 75%
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2
+}
+
+.close:focus,
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .5
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none
+}
+
+.modal-open {
+    overflow: hidden
+}
+
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    -webkit-overflow-scrolling: touch;
+    outline: 0
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 60px 10px 10px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 40px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    background-clip: padding-box;
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    opacity: 0
+}
+
+.modal-backdrop.in {
+    opacity: .5
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px
+}
+
+.modal-header .close {
+    margin-top: -2px
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5
+}
+
+.modal-footer .btn+.btn {
+    margin-left: 5px;
+    margin-bottom: 0
+}
+
+.modal-footer .btn-group .btn+.btn {
+    margin-left: -1px
+}
+
+.modal-footer .btn-block+.btn-block {
+    margin-left: 0
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto
+    }
+    .modal-content {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+    .modal-sm {
+        width: 300px
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 900px
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        text-align: center
+    }
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%
+    }
+    .modal-dialog {
+        display: inline-block;
+        text-align: left;
+        margin-top: 60px
+    }
+}
+
+.modal-dialog.modal-res {
+    width: auto
+}
+
+.modal-content {
+    border-radius: 0
+}
+
+body.modal-open {
+    overflow-y: scroll;
+    padding-right: 0!important
+}
+
+.lead {
+    line-height: 1.15em;
+    text-transform: uppercase
+}
+
+.select-search {
+    display: block;
+    margin-right: 1px
+}
+
+.lux-cinemax {
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 94px
+}
+
+.lux-cinemax-body {
+    z-index: 1
+}
+
+.lux-cinemax-player img {
+    width: 100%
+}
+
+.lux-cinemax-description {
+    background-color: #e35807;
+    color: #fff;
+    top: 113px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    font-size: 20px;
+    padding: 23px 30px;
+    line-height: 1.2em;
+    display: none;
+    max-height: 118px;
+    text-overflow: ellipsis
+}
+
+.lux-cinemax-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    padding: 0 5%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+@media (max-width: 768px) {
+    .lux-cinemax-list {
+        position: static;
+        padding: 15px 5%
+    }
+}
+
+@media (max-width: 480px) {
+    .lux-cinemax-list {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+}
+
+.lux-cinemax-list li a {
+    display: block;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 50%
+}
+
+.lux-cinemax-list li a span {
+    width: 48px;
+    height: 48px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 3px;
+    background-color: #613c23;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.lux-cinemax-list li img {
+    display: block
+}
+
+.lux-cinemax-list li .lux-timeline-point {
+    display: none
+}
+
+@media (min-width: 768px) {
+    .lux-cinemax-list li .lux-timeline-point {
+        display: block
+    }
+}
+
+.lux-cinemax-list li.active a {
+    border: 3px solid #e35807
+}
+
+@media (min-width: 768px) {
+    .lux-cinemax-list li.active a::before {
+        content: '';
+        position: absolute;
+        bottom: -56px;
+        left: 16px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent #e35807 transparent
+    }
+}
+
+@media (min-width: 768px) {
+    .lux-cinemax-list li.active .lux-cinemax-description {
+        display: block
+    }
+}
+
+.html5-video-content {
+    background-color: #fff
+}
+
+.html5-video-player {
+    background-color: #fff
+}
+
+// .lux-link-video {
+//     display: inline-block;
+//     position: relative
+// }
+.lux-link-video:after {
+    content: '';
+    position: absolute;
+    width: 104px;
+    height: 88px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(.9);
+    -ms-transform: translate(-50%, -50%) scale(.9);
+    transform: translate(-50%, -50%) scale(.9);
+    background: url(../img/sprite.png) no-repeat 0 -163px;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    -webkit-backface-visibility: hidden
+}
+
+.lux-link-video:hover:after {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.lux-link-video-small:after {
+    -webkit-transform: translate(-50%, -50%) scale(.6);
+    -ms-transform: translate(-50%, -50%) scale(.6);
+    transform: translate(-50%, -50%) scale(.6)
+}
+
+.lux-link-video-small:hover:after {
+    -webkit-transform: translate(-50%, -50%) scale(.7);
+    -ms-transform: translate(-50%, -50%) scale(.7);
+    transform: translate(-50%, -50%) scale(.7)
+}
+
+// .lux-link-video img {
+//     width: 100%
+// }
+.lux-modal-video .modal-body {
+    padding: 0;
+    background-color: #000
+}
+
+.lux-modal-video button.close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 9999;
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 30px;
+    padding: 0 10px
+}

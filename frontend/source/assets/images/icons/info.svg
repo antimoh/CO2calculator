@@ -1,0 +1,7 @@
+<svg id="info" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Ellipse_25" data-name="Ellipse 25" fill="none" stroke="#5f249f" stroke-width="1">
+    <circle cx="16" cy="16" r="16" stroke="none"/>
+    <circle cx="16" cy="16" r="15.5" fill="none"/>
+  </g>
+  <text id="_" data-name="?" transform="translate(7 4)" fill="#5f249f" font-size="18" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="5" y="19">?</tspan></text>
+</svg>
