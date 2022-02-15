@@ -56,7 +56,7 @@
           <ul class="purple-ul ml-20">
             <li><strong class="text-purple">Turn down the heating by 1°</strong>, it will already make a difference</li>
             <li><strong class="text-purple">Unplug the devices.</strong> Unplug your electronic equipment and donâ€™t leave your phone on charge when the battery is already full</li>
-            <li><strong class="text-purple">Select energy efficient products</strong> with an â€œAâ€ label</li>
+            <li><strong class="text-purple">Select energy efficient products</strong> with an "A" label</li>
             <li><strong class="text-purple">Lighting.</strong> Turn off lights youâ€™re not using and when you leave the room. Replace incandescent light bulbs with compact flourescent or LED ones.</li>
             <li><strong class="text-purple">Thermostat.</strong> Donâ€™t set it too high or low. Install a programmable model to turn off the heat/air conditioning when youâ€™re not home.</li>
             <li><strong class="text-purple">Limit and recycle your waste.</strong></li>
@@ -109,7 +109,7 @@
             <li>Recycling creates jobs: Example from USA - Recycling and waste management jobs employ close to 400,000 Americans today. Recycle Across America reports that if recycling levels reach 75 percent it would support 1.5 million jobs in the United States only.</li>
           </ul>
         </b-tab>
-        <b-tab title="Plastic free challange">
+        <b-tab title="Plastic free challenge">
           <p>
             In any conversation about living more sustainably, reducing the amount of plastic we use is usually one of the first things mentioned – and for good reason; we use a lot of plastic that can severely damage the environment. We challenge you to become aware of the plastic you use in your everyday life. We mean the plastic packaging on your groceries, or take-away coffee cups. Your shower gel, face cleanser or shampoo can also contain microplastics.
           </p>
