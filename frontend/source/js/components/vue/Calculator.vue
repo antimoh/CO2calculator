@@ -5,7 +5,7 @@
         <b-row>
           <b-col>
             <div class="mb-45" data-aos="fade-up">
-              <h1 class="text-center text-uppercase mb-30 mt-30">
+              <h1 class="text-center text-uppercase mb-20 mt-20">
                 <span>Carbon footprint</span> calculator
               </h1>
             </div>
@@ -77,7 +77,7 @@
                 <!-- end of intro content -->
 
                 <div v-if="contentPosition > 0" class="carbon-calculator__tab--content">
-                  <b-row class="mb-30">
+                  <b-row class="mb-20">
                     <b-col>
                       <div class="div-flex">
                         <b-img :src="`./static/images/icons/${contentIcon[contentPosition]}`" alt="icon" />
@@ -100,7 +100,9 @@
                   <div v-if="contentPosition === 1" class="carbon-calculator__tab--content houseHold">
                     <b-row>
                       <b-col>
-                        <p>How much electricity is used in your household annually?</p>
+                        <p class="mb-0">
+                          How much electricity is used in your household annually?
+                        </p>
                         <div>
                           <label for="range-q1" />
                           <b-form-input
@@ -134,9 +136,11 @@
                       </b-col>
                     </b-row>
 
-                    <b-row class="mt-20">
+                    <b-row class="mt-10">
                       <b-col>
-                        <p>How much gas is used in your household annually?</p>
+                        <p class="mb-0">
+                          How much gas is used in your household annually?
+                        </p>
                         <div>
                           <label for="q2-range" />
                           <b-form-input
@@ -170,7 +174,7 @@
                       </b-col>
                     </b-row>
 
-                    <b-row class="mt-20">
+                    <b-row class="mt-10">
                       <b-col>
                         <p>Is heating oil, coal, wood or bottled gas used in your household?</p>
                         <b-form-group v-slot="{ ariaDescribedby }">
@@ -259,7 +263,7 @@
                         </div>
                       </b-col>
                     </b-row>
-                    <b-row class="mt-25">
+                    <b-row class="mt-10">
                       <b-col>
                         <p>
                           What was the approximate usage of <b class="text-purple">trains</b> in the previous year?<br>Enter your regular distance travelled each week or month or whole year:
@@ -276,7 +280,7 @@
                         </div>
                       </b-col>
                     </b-row>
-                    <b-row class="mt-20">
+                    <b-row class="mt-10">
                       <b-col>
                         <p>
                           How many cars are used by your household?
@@ -485,7 +489,7 @@
                   <!-- end of results content -->
 
                   <!-- start of nagivation -->
-                  <b-row v-if="contentPosition < 4" class="mt-30">
+                  <b-row v-if="contentPosition < 4" class="mt-20">
                     <b-col>
                       <div class="text-left">
                         <div class="button t-button mt-mb-10 aos-init aos-animate">
