@@ -178,6 +178,10 @@ $marginLength:(0, 10, 15, 20, 25, 30, 40, 45, 50, 60, 100);
     @extend %margin-top-100;
 }
 
+.mb-0 {
+    @extend %margin-bottom-0;
+}
+
 .mb-10 {
     @extend %margin-bottom-10;
 }
