@@ -254,7 +254,7 @@
                         <p class="display-block">
                           Number of kilometers
                         </p>
-                        <b-form-input v-model="bus" class="display-block w-60 ml-10" type="number" />
+                        <b-form-input v-model="bus" class="display-block w-85 ml-10" type="number" />
                         <p class="display-block ml-10">
                           per
                         </p>
@@ -271,7 +271,7 @@
                         <p class="display-block">
                           Number of kilometers
                         </p>
-                        <b-form-input v-model="train" class="display-block w-60 ml-10" type="number" />
+                        <b-form-input v-model="train" class="display-block w-85 ml-10" type="number" />
                         <p class="display-block ml-10">
                           per
                         </p>
@@ -334,7 +334,7 @@
                             </div>
                           </b-col>
                           <b-col v-if="car01 === 'actual'" md="2" lg="2" class="text-left">
-                            <b-form-input v-model="mpg01" class="display-block w-60 ml-10" type="number" />
+                            <b-form-input v-model="mpg01" class="display-block w-85 ml-10" type="number" />
                           </b-col>
                         </b-row>
                         <b-row class="mt-10">
@@ -370,7 +370,7 @@
                             </div>
                           </b-col>
                           <b-col v-if="car02 === 'actual'" md="2" lg="2" class="text-left">
-                            <b-form-input v-model="mpg02" class="display-block w-60 ml-10" type="number" />
+                            <b-form-input v-model="mpg02" class="display-block w-85 ml-10" type="number" />
                           </b-col>
                         </b-row>
                         <b-row class="mt-10">
@@ -406,7 +406,7 @@
                             </div>
                           </b-col>
                           <b-col v-if="car03 === 'actual'" md="2" lg="2" class="text-left">
-                            <b-form-input v-model="mpg03" class="display-block w-60 ml-10" type="number" />
+                            <b-form-input v-model="mpg03" class="display-block w-85 ml-10" type="number" />
                           </b-col>
                         </b-row>
                         <b-row class="mt-10">
