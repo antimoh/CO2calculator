@@ -25,17 +25,14 @@
                     impact on the environment in terms of tons of CO2.
                   </b-card-text>
                   <b-card-text>
-                    Lowering individual carbon footprints doesn’t happen overnight!<br>
+                    Lowering individual carbon footprints doesn't happen overnight!<br>
                     We invite you to excitement journey:
                     <ul class="purple-ul ml-20">
                       <li>Complete the test</li>
                       <li>Find out what is your current carbon footprint</li>
                       <li>Learn tips on how to reduce carbon footprint</li>
                       <li>Take actions</li>
-                      <li>
-                        Re-take the test in 3-6 months and see the result on how your carbon footprint has changed considering undertaken actions! 
-                        We encourage you to share your results at Workplace or with your colleagues
-                      </li>
+                      <li>Re-take the test in 3-6 months and see the result on how your carbon footprint has changed considering undertaken actions! We encourage you to share your results at Workplace or with your colleagues</li>
                     </ul>
                   </b-card-text>
                   <div class="text-center mt-20 mb-20">
@@ -480,7 +477,7 @@
                         <p>
                           The average carbon footprint for a person in the United States is 16 tons, one of the highest rates in the world.
                           Globally, the average is closer to 4 tons. To have the best chance of avoiding a 2°C rise in global temperatures, the
-                          average global carbon footprint per year needs to drop under 2 tons by 2050 – this commitment was discussed at
+                          average global carbon footprint per year needs to drop under 2 tons by 2050 – this commitment was discussed at the
                           <a href="https://www.ipcc.ch/" class="text-purple" target="_blank">IPCC</a> summit.
                         </p>
                       </b-col>

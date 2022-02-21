@@ -10,7 +10,7 @@
       >
         <b-tab title="How it is calculated?">
           <p>
-            <b class="text-purple">How it is calculated – CO2 emission factors used and references</b>
+            <strong class="text-purple">How it is calculated &mdash; CO2 emission factors used and references</strong>
           </p>
           <p class="no-margin">
             <b class="text-purple">Electricity</b>
@@ -27,23 +27,24 @@
         </b-tab>
         <b-tab title="References">
           <p class="no-margin">
-            <b class="text-purple">Choose one of the challenges below:</b>
+            <strong class="text-purple">References:</strong>
           </p>
           <ol class="ml-20">
             <li class="mb-10">BEIS (2018) 2018 Government GHG Conversion Factors for Company Reporting: Methodology paper for emission factors: final report <a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/726911/2018_methodology_paper_FINAL_v01-00.pdf" class="text-purple" target="_blank">(link)</a></li>
-            <li class="mb-10">DEFRA (2007) Guidelines to Defra’s GHG conversion factors for company reporting <a href="https://www.carbonindependent.org/files/conversion-factors.pdf" class="text-purple" target="_blank">(link)</a></li>
+            <li class="mb-10">DEFRA (2007) Guidelines to Defra's GHG conversion factors for company reporting <a href="https://www.carbonindependent.org/files/conversion-factors.pdf" class="text-purple" target="_blank">(link)</a></li>
             <li>BERR Energy Trends December 2007 <a href="https://www.carbonindependent.org/files/file43304.pdf" class="text-purple" target="_blank">(link)</a></li>
           </ol>
         </b-tab>
         <b-tab title="Contact us">
-          <p>Let us know if you have any comments or questions about Carbon Footprint Calculator – <a href="mailto:ATimokhin@luxoft.com" class="text-purple">email</a></p>
+          <p>Let us know if you have any comments or questions about Carbon Footprint Calculator &mdash; <a href="mailto:CSR@luxoft.com" class="text-purple">email</a></p>
+          <p>We have a Workplace group where you can join our team, contribute to the project, and share your improvement suggestions &mdash; <a href="https://luxoft.workplace.com/groups/549418239645131" class="text-purple">Carbon Footprint Calculator Workplace Group</a></p>
         </b-tab>
         <b-tab title="About" active>
           <p>
-            Carbon Footprint Calculator is a <a href="https://luxproject.luxoft.com/confluence/display/CSR" class="text-purple" target="_blank">Luxoft CSR Incubator</a> winner of 2021 – it is aimed at raising awareness on the environmental issues and demonstrate how individual carbon footprint affects global pollution. Carbon Footprint Calculator is a user-friendly web application accessible for all employees on a voluntary basis in order to track their CO2 emissions and take action on its reduction.
+            Carbon Footprint Calculator is a <a href="https://luxproject.luxoft.com/confluence/display/CSR" class="text-purple" target="_blank">Luxoft CSR Incubator</a> winner of 2021 &mdash; it is aimed at raising awareness on the environmental issues and demonstrating how individual carbon footprint affects global pollution. Carbon Footprint Calculator is a user-friendly web application accessible for all employees on a voluntary basis in order to track their CO2 emissions and take action on its reduction.
           </p>
           <p>
-            Place for disclaimer or Copywrite or team acknowledgment.
+            Carbon Footprint Calculator provides a rough environmental impact of CO2 emission based on the given responses and is not intended for precise estimation. For a more accurate assessment of carbon footprint and additional information regarding environmental protection please follow the links in the References section.
           </p>
         </b-tab>
       </b-tabs>
