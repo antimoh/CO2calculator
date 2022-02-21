@@ -343,6 +343,9 @@
                               <b-form-select v-model="milage01" class="car-mileage display-block" :options="milageOptions" />
                             </div>
                           </b-col>
+                          <b-col v-if="milage01 === 'actual'" md="2" lg="2" class="text-left">
+                            <b-form-input v-model="mil01" class="display-block w-85 ml-10" type="number" />
+                          </b-col>
                         </b-row>
                       </div>
 
@@ -379,6 +382,9 @@
                               <b-form-select v-model="milage02" class="car-mileage display-block" :options="milageOptions" />
                             </div>
                           </b-col>
+                          <b-col v-if="milage02 === 'actual'" md="2" lg="2" class="text-left">
+                            <b-form-input v-model="mil02" class="display-block w-85 ml-10" type="number" />
+                          </b-col>
                         </b-row>
                       </div>
 
@@ -414,6 +420,9 @@
                             <div class="select-wrapper">
                               <b-form-select v-model="milage03" class="car-mileage display-block" :options="milageOptions" />
                             </div>
+                          </b-col>
+                          <b-col v-if="milage03 === 'actual'" md="2" lg="2" class="text-left">
+                            <b-form-input v-model="mil03" class="display-block w-85 ml-10" type="number" />
                           </b-col>
                         </b-row>
                       </div>
@@ -607,6 +616,9 @@ export default {
       mpg01: 0,
       mpg02: 0,
       mpg03: 0,
+      mil01: 0,
+      mil02: 0,
+      mil03: 0,
       foodOptions: [
         { value: 'none', text: 'None' },
         { value: 'some', text: 'Some' },
